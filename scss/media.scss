@@ -1,0 +1,25 @@
+@media screen
+  and (max-width: 1024px)
+ {
+    .content2{
+      margin-top: 35px;
+      margin-left: 45px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+  .text6{
+    color:red;
+  }
+  .container1{
+    display: block;
+        float: none;
+        width: 100%;
+  }
+  .container2{
+    display: block;
+        float: none;
+        width: 100%;
+  }
+}
