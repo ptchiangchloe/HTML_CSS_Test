@@ -1,5 +1,4 @@
 html, body {
-  font-family: Tahoma;
   min-height: 100%;
   margin: 0;
   padding: 0; }
@@ -15,10 +14,12 @@ body {
   background-size: cover; }
 
 .container-fluid {
-  height: 80%;
-  width: 83%;
-  margin-top: 5%;
-  margin-bottom: 5%; }
+  height: 100%;
+  width: 84%;
+  padding-top: 7%;
+  margin-bottom: 10%;
+  padding-left: 8%;
+  margin-right: 10%; }
 
 .row {
   overflow: hidden;
@@ -29,38 +30,20 @@ body {
   padding-bottom: 99999px; }
 
 .container1 {
+  background-color: rgba(255, 255, 255, 0.5);
   padding-left: 45px;
   padding-right: 45px;
   width: 40%;
-  float: left; }
-
-.background1 {
-  background-color: white;
-  filter: alpha(opacity=80);
-  /* IE */
-  -moz-opacity: 0.5;
-  /* Mozilla */
-  opacity: 0.5;
-  /* CSS3 */
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100; }
-
-.text-group1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
+  float: left;
+  padding-bottom: 500em;
+  margin-bottom: -500em; }
 
 .logo {
   display: block;
-  width: 80px;
-  height: 90px;
+  width: 90px;
+  height: 105px;
   padding: 10px;
-  padding-top: 20px;
+  padding-top: 25px;
   text-align: center; }
 
 .text1 {
@@ -96,10 +79,11 @@ body {
   padding-bottom: 20px; }
 
 .container2 {
-  background-color: black;
-  opacity: 0.8;
+  background-color: rgba(14, 0, 0, 0.9);
   width: 60%;
-  float: right; }
+  float: right;
+  padding-bottom: 500em;
+  margin-bottom: -500em; }
 
 .content2 {
   margin-top: 50px;
@@ -111,18 +95,10 @@ body {
   font-size: 34pt; }
 
 .text7 {
-  color: #fff;
+  color: #c7b299;
   font-family: impact;
   font-size: 22pt;
   margin-top: -10px; }
-
-.text8 {
-  color: #c7b299;
-  font-family: Tahoma;
-  font-size: 12pt;
-  margin-bottom: -30px;
-  margin-left: 15px;
-  background: rgba(255, 255, 255, 0); }
 
 .inputBox {
   height: 50px;
@@ -155,8 +131,8 @@ input:focus {
   margin-bottom: 10px;
   padding-right: 6px;
   padding-top: 4px;
-  background: #c7b299;
-  width: 120px;
+  background-color: #c7b299;
+  width: 140px;
   height: 45px;
   text-align: center;
   display: inline-block; }
@@ -166,7 +142,7 @@ input:focus {
   width: 90px;
   margin-top: -13px;
   margin-left: 5px;
-  background: black;
+  background: rgba(14, 0, 0, 0.85);
   text-align: center;
   font-size: 12pt; }
 
@@ -185,6 +161,13 @@ input:focus {
   width: 60%;
   min-width: 300px; }
 
-@media only screen and (max-width: 500px) {
-  .text6 {
-    color: red; } }
+#text11 {
+  color: #fff; }
+
+.error {
+  color: #ed3237;
+  font-family: Tahoma;
+  font-size: 15pt;
+  padding-bottom: 15px;
+  width: 80%;
+  visibility: hidden; }

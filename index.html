@@ -8,40 +8,42 @@
         <link rel="stylesheet" href="css/media.css">
     </head>
     <body background="Assets/background.jpg">
-        <div class="container-fluid center-block">
-            <div class="row-fluid row">
+        <div class="container-fluid">
+            <div class="row">
                 <div class="container1 ">
-                    <div class="background1">
-
-                    </div>
-                    <div class="text-group1">
-                      <img src="Assets/logo.png" style="margin:0 auto;" alt="" class="logo">
+                      <img src="Assets/logo.png" style="margin:0 auto;" alt="logo image" class="logo">
                       <p class="text1">Dokor Sit Amet</p>
                       <p class="text2">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                       <p class="text3">"Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>
                       <p class="text4">Laboris nisi ut aliquip ex ea commodo consequat</p>
                       <p class="text5">&#169; 2016 Dharma Initiative</p>
-                    </div>
-
                 </div>
-                <div class="container2 ">
+                <div class="container2">
                     <div class="content2">
                         <p class="text6">Namaste!</p>
                         <p class="text7">Please Sign In.</p>
-                        <div class="inputBox">
-                            <p class="text9">User Name</p><div class="input_field"><input class="passwordInput" type="text" name="username" value="johnsmith@gmail.com"/></div></div>
-                        <div class="inputBox">
-                            <p class="text9">Password</p><div class="input_field">
-                              <input class="passwordInput" type="password" name="password" value="johnsmith@gmail.com"/>
-                            </div></div>
-                        <div class="loginLine">
-                            <div type="submit" name="" class='login-btn'>Login</div>
-                            <p class="text10">Forgot Password？</p>
-                        </div>
-                        <p class="text11">Don't have and Acoount?  &nbsp; Sign Up Here!</p>
+                        <form name="login">
+                          <div class="inputBox">
+                              <p class="text9" name="user name">User Name</p><div class="input_field"><input class="passwordInput" type="email" name="username" value="johnsmith@gmail.com" aria-required="true" aria-labelledby="user name" required/></div></div>
+                          <div class="inputBox">
+                              <p class="text9" name="password">Password</p><div class="input_field">
+                                <input class="passwordInput" type="password" name="password" value="johnsmith@gmail.com" aria-required="true" aria-labelledby="password" required/>
+                              </div></div>
+                          <div class="loginLine">
+                              <input type="submit" name="login" value="Login" class='login-btn' role="button"></input>
+                              <p class="text10">Forgot Password？</p>
+                          </div>
+
+                        </form>
+
+                        <p class="text11"><span id="text11">Don't have and Acoount? </span> &nbsp; Sign Up Here!</p>
+                        <p class="error">*The User Name or Password you have entered is missing or incorrect.</p>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+        <script src="js/form-validation.js"></script>
     </body>
 </html>

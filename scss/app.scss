@@ -1,6 +1,7 @@
+$primary-color: #c7b299;
+$primary-font: Tahoma;
 
 html, body,  {
-  font-family: Tahoma;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -19,15 +20,18 @@ body {
 }
 
 .container-fluid{
-  height:80%;
-  width: 83%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  height:100%;
+  width: 84%;
+  padding-top: 7%;
+  margin-bottom: 10%;
+  padding-left: 8%;
+  margin-right: 10%;
 }
 
 .row{
   overflow: hidden;
   width:100%;
+
 }
 
 .row [class*="col-"]{
@@ -35,46 +39,23 @@ body {
   padding-bottom: 99999px;
 }
 
-
 // Description Part
 .container1 {
-
-
+  background-color: rgba(255,255,255,  .5);
   padding-left: 45px;
   padding-right: 45px;
   width:40%;
-   float:left;
-}
-
-.background1{
-  background-color: white;
-  filter: alpha(opacity=80);
-  /* IE */
-  -moz-opacity: 0.5;
-  /* Mozilla */
-  opacity: 0.5;
-  /* CSS3 */
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100;
-}
-
-.text-group1{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  float:left;
+  padding-bottom: 500em;
+  margin-bottom: -500em;
 }
 
 .logo{
   display: block;
-  width: 80px;
-  height: 90px;
+  width: 90px;
+  height: 105px;
   padding: 10px;
-  padding-top: 20px;
+  padding-top: 25px;
 
   text-align: center;
 }
@@ -90,7 +71,7 @@ body {
 .text4
 {
   color: #3d110e;
-  font-family: Tahoma;
+  font-family: $primary-font;
   font-size: 17pt;
   text-align: center;
 
@@ -98,7 +79,7 @@ body {
 
 .text3{
   color: #3d110e;
-  font-family: Tahoma;
+  font-family: $primary-font;
   font-size: 22pt;
   text-align: center;
   line-height: 100%;
@@ -110,7 +91,7 @@ body {
 
 .text5{
   color: #5d110e;
-  font-family: Tahoma;
+  font-family: $primary-font;
   font-size: 11pt;
   text-align: center;
   padding-top: 20px;
@@ -120,10 +101,11 @@ body {
 
 // LoginIn Part
 .container2 {
-  background-color: black;
-  opacity: 0.8;
+  background-color: rgba(14,0,0, 0.9);
   width:60%;
-   float:right;
+  float:right;
+  padding-bottom: 500em;
+  margin-bottom: -500em;
 }
 
 .content2 {
@@ -138,26 +120,16 @@ body {
 }
 
 .text7{
-  color: #fff;
+  color: $primary-color;
   font-family: impact;
   font-size: 22pt;
   margin-top: -10px;
 }
 
-.text8,
-{
-  color: #c7b299;
-  font-family: Tahoma;
-  font-size: 12pt;
-  margin-bottom:-30px;
-  margin-left:15px;
-  background:rgba(255, 255, 255, 0.0);
-}
-
 .inputBox{
   height:50px;
   width:60%;
-  border:2px solid #c7b299;
+  border:2px solid $primary-color;
   margin-top: 30px;
   min-width: 300px;
   padding-bottom: 10px;
@@ -189,41 +161,48 @@ input:focus {
   margin-bottom: 10px;
   padding-right: 6px;
   padding-top: 4px;
-  background: rgba(199, 178, 153, 1);
-  width: 120px;
+  background-color: rgba(199, 178, 153, 1);
+  width: 140px;
   height: 45px;
   text-align: center;
   display: inline-block;
 }
 
 .text9{
-    color: #c7b299;
+    color: $primary-color;
     width:90px;
     margin-top:-13px;
     margin-left:5px;
-    background:black;
+    background:rgba(14,0,0, 0.85);
     text-align: center;
     font-size: 12pt;
 }
 
 .text10{
-  color: #c7b299;
-  font-family: Tahoma;
+  color: $primary-color;
+  font-family: $primary-font;
   font-size: 15pt;
   display: inline-block;
   margin-left: 30px;
 }
 .text11{
-  color: #c7b299;
-  font-family: Tahoma;
+  color: $primary-color;
+  font-family: $primary-font;
   font-size: 15pt;
   margin-top: 10px;
   width:60%;
   min-width: 300px;
 }
 
-@media only screen and (max-width: 500px) {
-  .text6{
-    color:red;
-  }
+#text11{
+  color: #fff;
+}
+
+.error{
+  color: #ed3237;
+  font-family: $primary-font;
+  font-size: 15pt;
+  padding-bottom: 15px;
+  width: 80%;
+  visibility: hidden;
 }
