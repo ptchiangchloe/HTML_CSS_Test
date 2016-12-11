@@ -3,7 +3,7 @@
 Installation local environment
 ------------
 
-1. Download files, or clone repository from [repository url](https://github.com/ptchiangchloe/front_end_web_developer/tree/master/neighborhood_map).
+1. Download and unzip the project
 2. NodeJS installed(http://nodejs.org/)
 3. GulpJS installed globally
 ```
@@ -20,9 +20,6 @@ gulp watch
 
 Contribute
 ----------
-
-- Issue Tracker: [repository url](https://github.com/ptchiangchloe/HTML_CSS_Test).
-- Source Code: [repository url](https://github.com/ptchiangchloe/HTML_CSS_Test).
 
 Support
 -------

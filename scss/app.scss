@@ -9,6 +9,11 @@ $primary-font: Tahoma;
   align-items: center;
 }
 
+fieldset {
+    border: 1px solid #000;
+}
+
+
 html, body,  {
   min-height: 100%;
   margin: 0;
@@ -41,7 +46,7 @@ body {
   background-color: rgba(255,255,255,  .5);
   padding-left: 45px;
   padding-right: 50px;
-  width:40%;
+  width:38%;
   float:left;
   padding-bottom: 500em;
   margin-bottom: -500em;
@@ -98,8 +103,8 @@ body {
 
 // LoginIn Part
 .container2 {
-  background-color: rgba(14,0,0, 0.9);
-  width:60%;
+  background-color: rgba(4,0,0, 0.8);
+  width:62%;
   float:right;
   padding-bottom: 500em;
   margin-bottom: -500em;
@@ -123,17 +128,27 @@ body {
   margin-top: -10px;
 }
 
+
 .inputBox{
   height:50px;
-  width:60%;
+  width:65%;
   border:1.5px solid $primary-color;
   margin-top: 30px;
   min-width: 300px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+fieldset {
+  padding-top: 25px;
+}
+
+.login{
+  margin-top: -10px;
 }
 
 .input_field{
-  margin-top: -15px;
+  margin-top: -40px;
 }
 .passwordInput{
   border: none;
@@ -167,12 +182,13 @@ input:focus {
 
 .text9{
     color: $primary-color;
-    width:90px;
-    margin-top:-13px;
-    margin-left:5px;
-    background:rgba(14,0,0, 0.85);
-    text-align: center;
+    width:100px;
+    background:rgba(14,0,0, 0);
     font-size: 12pt;
+    margin-left: 3%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    text-align:justify;
 }
 
 .text10{
@@ -185,14 +201,15 @@ input:focus {
 .text11{
   color: $primary-color;
   font-family: $primary-font;
-  font-size: 15pt;
+  font-size: 14pt;
   margin-top: 10px;
-  width:60%;
-  min-width: 380px;
+  width:65%;
+  min-width: 350px;
 }
 
 #text11{
   color: #fff;
+  width: 60px;
 }
 
 .error{

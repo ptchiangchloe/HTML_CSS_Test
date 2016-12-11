@@ -22,6 +22,7 @@ $(function() {
             var errors = validator.numberOfInvalids();
             if (errors) {
                 $(".error").css("visibility", "visible");
+                // $(".error").css("margin-top", "-30px");
                 $(".inputBox").css("border", "1.8px solid #ed3237");
                 $(".text9").css("color", "#ed3237");
                 $(".inputBox").css("background", "rgba(237,50,55, 0.2");

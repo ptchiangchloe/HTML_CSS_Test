@@ -6,6 +6,9 @@
   display: flex;
   align-items: center; }
 
+fieldset {
+  border: 1px solid #000; }
+
 html, body {
   min-height: 100%;
   margin: 0;
@@ -32,7 +35,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   padding-left: 45px;
   padding-right: 50px;
-  width: 40%;
+  width: 38%;
   float: left;
   padding-bottom: 500em;
   margin-bottom: -500em; }
@@ -78,8 +81,8 @@ body {
   padding-bottom: 20px; }
 
 .container2 {
-  background-color: rgba(14, 0, 0, 0.9);
-  width: 60%;
+  background-color: rgba(4, 0, 0, 0.8);
+  width: 62%;
   float: right;
   padding-bottom: 500em;
   margin-bottom: -500em; }
@@ -101,14 +104,21 @@ body {
 
 .inputBox {
   height: 50px;
-  width: 60%;
+  width: 65%;
   border: 1.5px solid #c7b299;
   margin-top: 30px;
   min-width: 300px;
-  padding-bottom: 10px; }
+  padding-bottom: 30px;
+  margin-bottom: 30px; }
+
+fieldset {
+  padding-top: 25px; }
+
+.login {
+  margin-top: -10px; }
 
 .input_field {
-  margin-top: -15px; }
+  margin-top: -40px; }
 
 .passwordInput {
   border: none;
@@ -138,12 +148,13 @@ input:focus {
 
 .text9 {
   color: #c7b299;
-  width: 90px;
-  margin-top: -13px;
-  margin-left: 5px;
-  background: rgba(14, 0, 0, 0.85);
-  text-align: center;
-  font-size: 12pt; }
+  width: 100px;
+  background: rgba(14, 0, 0, 0);
+  font-size: 12pt;
+  margin-left: 3%;
+  padding-left: 2%;
+  padding-bottom: 1%;
+  text-align: justify; }
 
 .text10 {
   color: #c7b299;
@@ -155,13 +166,14 @@ input:focus {
 .text11 {
   color: #c7b299;
   font-family: Tahoma;
-  font-size: 15pt;
+  font-size: 14pt;
   margin-top: 10px;
-  width: 60%;
-  min-width: 380px; }
+  width: 65%;
+  min-width: 350px; }
 
 #text11 {
-  color: #fff; }
+  color: #fff;
+  width: 60px; }
 
 .error {
   color: #ed3237;
