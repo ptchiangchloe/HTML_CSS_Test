@@ -9,7 +9,6 @@ var pump = require('pump');
 var htmlmin = require('gulp-htmlmin');
 
 
-
 gulp.task('sass', function() {
     return gulp.src('scss/*.scss')
         .pipe(sass({

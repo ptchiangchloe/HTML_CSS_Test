@@ -135,7 +135,6 @@ body {
   border:1.5px solid $primary-color;
   margin-top: 30px;
   min-width: 300px;
-  padding-bottom: 30px;
   margin-bottom: 30px;
 }
 
@@ -171,8 +170,8 @@ input:focus {
   color: #5b1d19;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-right: 6px;
-  padding-top: 4px;
+
+
   background-color: rgba(199, 178, 153, 1);
   width: 140px;
   height: 45px;
@@ -188,7 +187,6 @@ input:focus {
     margin-left: 3%;
     padding-left: 2%;
     padding-bottom: 1%;
-    text-align:justify;
 }
 
 .text10{
@@ -219,4 +217,16 @@ input:focus {
   padding-bottom: 15px;
   width: 80%;
   visibility: hidden;
+}
+
+@-moz-document url-prefix() {
+  .input_field{
+    margin-top: -35px;
+  }
+
+  .text9{
+    padding-top: 2px;
+  }
+
+
 }

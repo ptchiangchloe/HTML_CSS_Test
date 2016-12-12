@@ -1,5 +1,8 @@
 // Wait for the DOM to be ready
 $(function() {
+    $('input, select, textarea').on("invalid", function(e) {
+        e.preventDefault();
+    });
     // Initialize form validation on the registration form.
     $("form[name='login']").validate({
         // Specify validation rules

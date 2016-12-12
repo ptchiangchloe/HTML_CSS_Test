@@ -4,8 +4,8 @@
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" >
         <title>HTML CSS Test</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-        <link rel="stylesheet" href="dest/css/app.min.css">
-        <link rel="stylesheet" href="dest/css/media.min.css">
+        <link rel="stylesheet" href="./css/app.css">
+        <link rel="stylesheet" href="./css/media.css">
     </head>
     <body background="Assets/background.jpg" class="container">
         <div class="container-fluid vertical-center">
@@ -22,31 +22,25 @@
                     <div class="content2">
                         <p class="text6">Namaste!</p>
                         <p class="text7">Please Sign In.</p>
+                          <form name="login" class="login">
+                            <fieldset class="inputBox">
+                                <legend class="text9">User Name</legend>
+                                <!-- <p class="text9" name="user name">User Name</p> -->
+                                <div class="input_field"><input class="passwordInput" type="email" name="username" value="johnsmith@gmail.com" aria-required="true" aria-labelledby="user name" required/>
+                                </div>
+                            </fieldset>
+                            <fieldset class="inputBox">
+                                <legend class="text9">Password</legend>
+                                <!-- <p class="text9" name="user name">User Name</p> -->
+                                <div class="input_field"><input class="passwordInput" type="password" name="password" value="johnsmith@gmail.com" aria-required="true" aria-labelledby="password" required/>
+                                </div>
+                            </fieldset>
+                            <div class="loginLine">
+                                <input type="submit" name="login" value="Login" class='login-btn' role="button"></input>
+                                <p class="text10">Forgot Password？</p>
+                            </div>
+                          </form>
 
-                        <form name="login" class="login" novalidate>
-                          <fieldset class="inputBox">
-
-                              <legend class="text9">User Name</legend>
-                              <!-- <p class="text9" name="user name">User Name</p> -->
-                              <div class="input_field"><input class="passwordInput" type="email" name="username" value="johnsmith@gmail.com" aria-required="true" aria-labelledby="user name" required/>
-                              </div>
-                          </fieldset>
-                          <fieldset class="inputBox">
-
-                              <legend class="text9">Password</legend>
-                              <!-- <p class="text9" name="user name">User Name</p> -->
-                              <div class="input_field"><input class="passwordInput" type="password" name="password" value="johnsmith@gmail.com" aria-required="true" aria-labelledby="password" required/>
-                              </div>
-                          </fieldset>
-                          <!-- <div class="inputBox">
-                              <p class="text9" name="password">Password</p><div class="input_field">
-                                <input class="passwordInput" type="password" name="password" value="johnsmith@gmail.com" aria-required="true" aria-labelledby="password" required/>
-                              </div></div> -->
-                          <div class="loginLine">
-                              <input type="submit" name="login" value="Login" class='login-btn' role="button"></input>
-                              <p class="text10">Forgot Password？</p>
-                          </div>
-                        </form>
                         <p class="text11"><span id="text11">Don't have and Acoount? </span> &nbsp; Sign Up Here!</p>
                         <p class="error">*The User Name or Password you have entered is missing or incorrect.</p>
                     </div>
